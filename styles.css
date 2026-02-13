@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#resultField {
+  color: green;
+}
+
+#btn {
+  height: 30px;
+  width: 80px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+#btn:active {
+  background-color: grey;
+}
+
+#input,
+#from-temp,
+#to-temp {
+  height: 30px;
+  width: 200px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+#input {
+  padding-left: 5px;
+}
+
+@media only screen and (max-width: 425px) {
+  .inputfields {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #input,
+  #from-temp,
+  #to-temp {
+    margin-bottom: 10px;
+  }
+
+  #resultField {
+    display: flex;
+    justify-content: center;
+  }
+}
